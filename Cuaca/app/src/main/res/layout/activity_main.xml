@@ -12,11 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         
-        <TextView
+        <Button
             android:background="#0249A0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_cityInfo"
+            android:id="@+id/buttonView_cityInfo"
             android:textColor="#ffffff"
             android:padding="16dp"
             android:textSize="18sp"
