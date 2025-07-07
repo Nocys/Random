@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblio Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Bibliokafe, tempat tenang untuk pecinta buku, kopi, dan ketenangan">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Biblio Cafe</div>
+    <nav id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#products">Our Product</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn register">Register</button>
+      <button id="theme-toggle" class="btn">Toggle Theme</button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero Static -->
+  <section id="home" class="hero-static fade-in-onload">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Enjoy The Most <span class="highlight">Delicious Coffee</span></h1>
+        <p>Start your day with coffee, enhancing productivity and mood. Its invigorating aroma sets a focused tone for tackling tasks with renewed energy and positivity.</p>
+        <div class="cta">
+          <button class="btn explore">Explore ⟶</button>
+          <button class="btn order">Order Coffee Now</button>
+        </div>
+      </div>
+      <div class="hero-img-wrapper">
+        <img id="hero-img" src="img/bgSwipe8.jpg" alt="Coffee Cup" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 2: Product Menu -->
+  <!-- Section 2: Product Menu -->
+  <section id="products" class="menu-section">
+    <h2>Our Menu</h2>
+
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/americano.jpg" alt="Americano">
+        </div>
+        <h3>Americano</h3>
+        <p>A coffee drink typically made from equal parts espresso...</p>
+        <div class="stars">★★★★★ (4.7)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/black.jpg" alt="Black Coffee">
+        </div>
+        <h3>Black Coffee</h3>
+        <p>Black coffee is a hot coffee beverage simply made...</p>
+        <div class="stars">★★★★★ (4.9)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/mocha.jpg" alt="Mocha">
+        </div>
+        <h3>Mocha</h3>
+        <p>A coffee drink known for its chocolate sweet, rich...</p>
+        <div class="stars">★★★★★ (4.8)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/breve.jpg" alt="Breve">
+        </div>
+        <h3>Breve</h3>
+        <p>Breve is a coffee drink made with equal parts espresso...</p>
+        <div class="stars">★★★★★ (4.8)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/francebread.jpg" alt="Croissant">
+        </div>
+        <h3>Croissant</h3>
+        <p>A flaky, buttery French pastry with a crisp exterior and soft, airy layers inside....</p>
+        <div class="stars">★★★★★ (4.9)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/lavaToast.jpg" alt="Lava Toast">
+        </div>
+        <h3>Lava Toast</h3>
+        <p>Thick toasted bread filled with molten cream or custard that oozes out when cut....</p>
+        <div class="stars">★★★★★ (4.9)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/Sandwich1.jpg" alt="Sandwich">
+        </div>
+        <h3>Sandwich</h3>
+        <p>A convenient meal made of two slices of bread enclosing various fillings like meat, vegetables, or cheese....</p>
+        <div class="stars">★★★★★ (4.9)</div>
+        <button class="btn more">More</button>
+      </div>
+
+      <div class="menu-card">
+        <div class="image-wrapper">
+          <img src="img/parfait.jpg" alt="Parfait">
+        </div>
+        <h3>Parfait</h3>
+        <p>A layered dessert typically served in a glass, combining yogurt, granola, and fresh fruits....</p>
+        <div class="stars">★★★★★ (4.9)</div>
+        <button class="btn more">More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 3: Contact Form -->
+  <section id="contact" class="contact-section">
+    <div class="contact-wrapper">
+      <!-- KIRI: Formulir -->
+      <form id="contact-form" action="https://formspree.io/f/mkgbarqe" method="POST">
+        <h2>Contact Us</h2>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        <button type="submit" class="btn submit">Send</button>
+        <div id="form-response"></div>
+      </form>
+
+      <!-- KANAN: Gambar dan Sosmed -->
+      <div class="contact-side">
+        <img src="img/bgSwipeLandscape1.jpg" alt="Contact Visual" />
+        <div class="social-links">
+          <a href="https://instagram.com/yourhandle" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://facebook.com/yourpage" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://wa.me/yourwhatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>Biblio Café &copy; 2025</p>
+    <p>Jl. Dr.Wahidin No. 07, Pontianak, Kalimantan Barat</p>
+    <p>Email: contact@bibliocafe.com | Phone: (007) 707-7007</p>
+  </div>
+
+</footer>
+
+</body>
+
+</html>
